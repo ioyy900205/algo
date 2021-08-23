@@ -190,10 +190,11 @@ class BinaryHeap:
 
 
 if __name__ == '__main__':
+    random.seed(1)
     nums = list(range(10))
     random.shuffle(nums)
 
-    bh = BinaryHeap(nums)
+    bh = BinaryHeap(nums) #[7, 8, 1, 5, 3, 4, 2, 0, 9, 6]
     print('--- before heapify ---')
     print(bh)
 

@@ -112,7 +112,6 @@ class BinarySearchTree:
 
                 node.parent = None
         # 2
-        # 2.1 right_node is exist
         elif node.left is None and node.right is not None:
             if node == self.root:
                 self.root = node.right
@@ -127,7 +126,6 @@ class BinarySearchTree:
                 node.right.parent = node.parent
                 node.parent = None
                 node.right = None
-        # 2.2 left_node is exist 
         elif node.left is not None and node.right is None:
             if node == self.root:
                 self.root = node.left
